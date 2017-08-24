@@ -1,0 +1,148 @@
+/*内容开始*/
+.main{
+    width: 100%;
+    height: auto;
+}
+/*菜单*/
+.menu{
+    width: 1000px;
+    height: 46px;
+    margin: 20px auto;
+    background: #d8d8d8;
+}
+
+.menu ul li{
+    width: 500px;
+    height: 46px;
+    float: left;
+    position: relative;
+    border: 1px solid #d8d8d8;
+    color: #f2f2f2;
+    background: #d8d8d8;
+    /*margin-right: -3px;*/
+    line-height: 44px;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+.menu ul li:after{
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 96px;
+    height: 2px;
+    margin-left: -48px;
+    content: "";
+    background: #c12725;
+}
+.menu ul li:nth-child(2):after{
+    transform: scaleX(0);
+    transition: scaleX .4s ;
+}
+/*.menu ul li:nth-child(3):after{
+    transform: scaleX(0);
+    transition: scaleX .4s ;
+}*/
+.menu ul li:nth-child(1){
+    height: 46px;
+    color: #212121;
+    border: 1px solid #b0b0b0;
+    background: #fff;
+}
+.menu ul li:hover{
+    color: #212121;
+    background: #fff;
+}
+.menu ul li:hover:after{
+    transform: scaleX(1);
+}
+/*主要内容开始*/
+.mainbox{
+    width: 1000px;
+    height: auto;
+    margin: 10px auto;
+}
+.main-top{
+    width: 1000px;
+    height: 215px;
+}
+.mainbox>p{
+    margin: 40px 0 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.mainbox p img{
+    float: left;
+    margin-right: 5px;
+}
+
+
+.main-top .main-left{
+    width: 437px;
+    height: 215px;
+    float: left;
+}
+.main-top .main-left img{
+    width: 437px;
+    height: 215px;
+}
+.main-top .main-right{
+    width: 448px;
+    height: 215px;
+    margin-left: 30px;
+    float: left;
+    position: relative;
+}
+.main-top .main-right .bar{
+    color: #999;
+    font-size: 16px;
+    line-height: 60px;
+}
+.main-top .main-right .chakan{
+    color: #999;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.main-top .main-right .chakan a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*消息*/
+.news{
+    width: 1000px;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin: 40px 0;
+}
+.news li{
+    width: 900px;
+    margin: 20px 50px;
+    border-bottom: 1px dashed #ccc;
+}
+.news li a{
+    color: #333;
+}
+.news li a:before{
+    content: "";
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 8px;
+    background: #333;
+}
+.news li span{
+    float: right;
+}
+.news li:hover a{
+    color: #ac121d;
+}
+
+
+
+

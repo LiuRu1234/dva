@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main{
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+            background: #ccc;
+            border: 1px solid #ccc;
+            animation: shake 6s linear infinite;
+            overflow: hidden;
+            background: url("001.jpg") center no-repeat;
+            background-size: cover;
+        }
+        .left{
+            width: 800px;
+            height: 100%;
+            /*background: #33f;*/
+            float: left;
+            /*background: url("background.jpg") center no-repeat;
+            background-size: cover;*/
+            position: relative;
+        }
+        .right{
+            width: 200px;
+            height: 100%;
+            /*background: #3787ff;*/
+            background: rgba(100, 100, 100, 0.5);
+            float: left;
+        }
+        .show{
+            width: 180px;
+            height: 40px;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            border-radius: 5px;
+        }
+        .show .title{
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+        }
+        .show .con{
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            color: red;
+            background: #fff;
+        }
+        .btn{
+            width: 180px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #fff;
+            color: #333;
+            margin: 30px auto;
+            cursor: pointer;
+            border-radius: 5px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .btn:hover{
+            box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+        }
+        .letter{
+            width: 100px;
+            height: 100px;
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+
+            /*border: 1px solid #fff;
+            box-shadow: 0 -1px 1px rgba(200, 200, 200, 0.17);;
+            background: radial-gradient(circle at 50% 50%, #aef4ff 0%, #6fbfff 30%, #51abea 100%);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 80px;*/
+            position: absolute;
+            /*color: #fff;
+            font-size: 30px;
+            font-weight: bold;*/
+            animation: bubble-anim 2s;
+        }
+        .phb{
+            width: 150px;
+            height: auto;
+            background: #fff;
+            border-radius: 10px;
+            margin: 0 auto;
+            color: #000;
+        }
+        .phb li{
+            font-size: 16px;
+            color: #333;
+        }
+
+        @keyframes shake {
+            0%{
+                transform:translateX(0);
+            }
+            30%{
+                transform:translateX(40px);
+            }
+            50%{
+                transform:translateX(0);
+            }
+            80%{
+                transform:translateX(-40px);
+            }
+            100%{
+                transform:translateX(0);
+            }
+        }
+        @keyframes bubble-anim { 0% { transform: scale(1); } 20% { transform: scaleY(0.95) scaleX(1.05); } 48% { transform: scaleY(1.1) scaleX(0.9); } 68% { transform: scaleY(0.98) scaleX(1.02); } 80% { transform: scaleY(1.02) scaleX(0.98); } 97%, 100% { transform: scale(1); }}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right">
+            <div class="show">
+                <div class="title">得分</div>
+                <div class="con" id="scor">0</div>
+            </div>
+
+            <div class="show">
+                <div class="title">关卡</div>
+                <div class="con" id="state">1</div>
+            </div>
+
+            <div class="show">
+                <div class="title">生命值</div>
+                <div class="con" id="life">5</div>
+            </div>
+
+            <div class="btn" id="start">开始</div>
+            <div class="btn" id="pause">暂停</div>
+
+            <ul class="phb">排行榜
+                <li>第一名<span></span></li>
+                <li>第二名<span></span></li>
+                <li>第三名<span></span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="dazigame.js"></script>
+</html>

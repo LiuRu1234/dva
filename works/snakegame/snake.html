@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <div class="list">
+        <div class="btn" id="start">开始
+            <i class="iconfont">&#xe641;</i>
+        </div>
+        <div class="btn" id="pause">暂停
+            <i class="iconfont">&#xe66a;</i>
+        </div>
+        <div class="show">
+            <div class="title">得分</div>
+            <!--<i class="iconfont">&#xe681;</i>-->
+            <div class="con" id="scor">0</div>
+        </div>
+        <div class="show">
+            <div class="title">关卡</div>
+            <!--<i class="iconfont">&#xe65f;</i>-->
+            <div class="con" id="state">1</div>
+        </div>
+    </div>
+    <div class="scene"></div>
+    <div class="alert">
+        <p>游戏结束</p>
+        <input type="button" value="确定" id="submit">
+    </div>
+
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="snake.js"></script>
+</html>

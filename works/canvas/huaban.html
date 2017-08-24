@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="huaban.css">
+</head>
+<body>
+    <section>
+        <div class="btn">
+            <div>
+                <input type="button" value="新建画布" id="create">
+            </div>
+            <div>
+                <input type="button" value="撤销" id="cancel">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="清空" id="clear">
+            </div>
+            <div>
+                <span class="iconfont" id="pencil">铅笔</span>
+                <span class="iconfont" id="earser">橡皮</span>
+            </div>
+            <div>形状
+                <select id="shape">
+                    <option value="line">直线</option>
+                    <option value="rect">矩形</option>
+                    <option value="circle1">内接圆</option>
+                    <option value="circle2">外切圆</option>
+                    <option value="poly">多边形</option>
+                </select><br>
+                多边形边数
+                <input type="number" min="3" value="3" id="linenum">
+            </div>
+            <div>线宽
+                <input type="range" value="2" step="2" min="2" max="10" id="linewidth">
+            </div>
+            <div>
+                描边<input type="radio" name="type" value="stroke" checked>&nbsp;&nbsp;&nbsp;&nbsp;
+                填充<input type="radio" name="type" value="fill">
+            </div>
+            <div>图形颜色
+                <input type="color" id="color">
+            </div>
+            <div>背景颜色
+                <input type="color" id="backColor">
+            </div>
+        </div>
+    </section>
+
+    <div class="main"></div>
+
+    <div class="alert" animated>
+        宽度<input type="number" id="width" value="800">px
+        高度<input type="number" id="height" value="600">px
+        <input type="button" value="取消" id="cal">
+        <input type="button" value="确定" id="submit">
+    </div>
+</body>
+<script src="draw.js"></script>
+<script src="canvas.js"></script>
+</html>

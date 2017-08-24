@@ -1,0 +1,117 @@
+.text{
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ac121d;
+}
+.name span{
+    border-bottom: 2px solid #ac121d;
+}
+/*内容开始*/
+.main{
+    width: 100%;
+    height: auto;
+}
+/*菜单*/
+.menu{
+    width: 1000px;
+    height: 46px;
+    margin: 20px auto;
+    background: #d8d8d8;
+}
+.menu .menu-name li{
+    width: 500px;
+    height: 46px;
+    float: left;
+    position: relative;
+    border: 1px solid #d8d8d8;
+    color: #f2f2f2;
+    background: #d8d8d8;
+    /*margin-right: -3px;*/
+    line-height: 44px;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+.menu .menu-name li:after{
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 96px;
+    height: 2px;
+    margin-left: -48px;
+    content: "";
+    background: #c12725;
+}
+.menu .menu-name li:not(.active):after{
+    transform: scaleX(0);
+    transition: scaleX .4s ;
+}
+.menu .menu-name li.active{
+    height: 46px;
+    color: #212121;
+    border: 1px solid #b0b0b0;
+    background: #fff;
+    color: #212121;
+    background: #fff;
+    transform: scaleX(1);
+}
+
+/*主要内容开始*/
+.mainbox{
+    width: 1000px;
+    height: auto;
+    margin: 10px auto;
+}
+.mainbox .tongdao img{
+    width: 1000px;
+    margin-bottom: 40px;
+}
+.mainbox .fuli{
+    display: none;
+}
+.mainbox .fuli h1{
+    line-height: 160px;
+    font-size: 40px;
+    position: relative;
+}
+.mainbox .fuli h1:after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    background: #c12725;
+}
+.mainbox .fuli pre{
+    font-size: 16px;
+    color: #9fa0a0;
+    line-height: 56px;
+}
+.mainbox .fuli .pic{
+    width: 1000px;
+    height: 640px;
+    margin-bottom: 100px;
+}
+.mainbox .fuli .pic li img:nth-child(1){
+    float: left;
+}
+.mainbox .fuli .pic li img:nth-child(2){
+    float: right;
+}
+.mainbox .fuli .pic li img{
+    margin-bottom: 5px;
+    /*float: right;*/
+}
+.mainbox .fuli .pic li img:nth-child(3){
+    float: right;
+}
+
+
+
+
+

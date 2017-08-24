@@ -1,0 +1,206 @@
+html,body{
+    height: 100%;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    width: 110px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 668;
+}
+.logo a{
+    display: block;
+}
+.logo a img{
+    width: 110px;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*轮播图开始*/
+.banner .list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner .list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.banner .list li:nth-child(1){
+    display: block;
+}
+.banner img{
+    width: 100%;
+}
+.banner .bannerPic{
+    width: 110%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*轮播点开始*/
+.point{
+    width: 160px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -80px;
+    z-index: 666;
+    display: flex;
+    justify-content: space-around;
+}
+.point li{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+.point li.active{
+    background: #fff;
+}
+/*轮播小框开始*/
+.reset{
+    width: 18%;
+    height: 50%;
+    border: 10px solid rgba(255,255,255,1);
+    background: transparent;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+    z-index: 666;
+}
+/*.reset li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}*/
+.reset h3{
+    width: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    /*display: none;*/
+}
+.reset .txt_logo{
+    width: 80px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    margin-left: -40px;
+}
+.reset .txt_logo img{
+    width: 64px;
+}
+.reset .txt{
+    width: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+.reset .txt p{
+    padding: 14px;
+    font-size: 12px;
+    color: #fff;
+}
+.reset .txt .btn{
+    width: 100%;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.reset .txt .btn .btns{
+    width: 80px;
+    height: 20px;
+    background: rgba(255,255,255,0.3);
+    text-align: center;
+    line-height: 20px;
+}
+.reset .txt .btn .btns a{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+}
+.reset.on{
+    z-index: 668;
+    display: block;
+}
+/*左边菜单开始*/
+.menu{
+    width: 110px;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 666;
+}
+.menu .menupic{
+    width: 28px;
+    position: absolute;
+    top: 0;left: 0;bottom: 0;right: 0;margin: auto;
+    z-index: 668;
+}
+.menu .menutop{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 668;
+    display: none;
+}
+.menu .menutop li{
+    line-height: 24px;
+    padding-left: 20px;
+}
+.menu .menutop li a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.menu .menutop li a.active{
+    color: #e10e18;
+}
+.menu .menutop li a:hover{
+    color: #e10e18;
+}
+.menu .menubottom{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    z-index: 668;
+    display: none;
+}
+.menu .menubottom li{
+    height: 30px;
+}
+.menu .menubottom li a{
+    display: block;
+    padding-left: 14px;
+    font-size: 12px;
+    color: #fff;
+}
+.menu .menubottom li a:hover{
+    color: #e10e18;
+}
+.menu .menubottom li a img{
+    float: left;
+}
+

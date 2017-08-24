@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype'),
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:0.16rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+    margin: 0;padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+input{
+    border: 0;
+    outline: none;
+}
+html,body{
+    width: 7.5rem;
+    height: 100%;
+    font-size: 0.24rem;
+    background: #e8e8e8;
+}
+/*主菜单*/
+.bar{
+    width: 7.5rem;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.leftbar{
+    width: 6rem;
+    height: 100%;
+    background:#f0f0f0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.leftbar h3{
+    color: #333;
+    text-align: center;
+    font-size: 0.55rem;
+    padding:0.5rem 0.05rem;
+}
+.leftbar .user{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url("../img/user.jpg");
+    background-size: cover;
+}
+.leftbar .name{
+    width: 3rem;
+    height: 1rem;
+    margin: 0.2rem auto 0;
+    text-align: center;
+    font-size: 0.35rem;
+}
+.leftbar .class{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+.leftbar ul{
+    margin-left: 0.5rem;
+    font-size: 0.4rem;
+}
+.leftbar ul li{
+    height: 0.8rem;
+    color: #333;
+    line-height: 0.5rem;
+    cursor: pointer;
+}
+.leftbar ul li:first-child:before{
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: red;
+    margin: 0.02rem 0.2rem;
+    float: left;
+}
+.leftbar ul li:nth-child(2):before{
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #feff08;
+    margin: 0.02rem 0.2rem;
+    float: left;
+}
+.leftbar ul li:last-child:before{
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #05ff05;
+    margin: 0.02rem 0.2rem;
+    float: left;
+}
+
+/*添加事件开始*/
+.addmian{
+    width: 7.5rem;
+    height: 100%;
+    background: #e8e8e8;
+    position: relative;
+    display: none;
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+}
+.addmian .top{
+    width: 7.2rem;
+    height: 0.8rem;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.15rem;
+}
+.addmian .top .topbox{
+    width: 100%;
+    height: 0.5rem;
+}
+.addmian .top .topbox .select{
+    float: left;
+    font-size: 0.55rem;
+    margin-top: -0.1rem;
+    color: #333;
+}
+.addmian .top .topbox .set{
+    float: right;
+    font-size: 0.4rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    margin-top: 0.08rem;
+    margin-left: 0.2rem;
+}
+.addmian .container .add{
+    width: 7.2rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 0.15rem;
+}
+.addmian .container{
+    width: 100%;
+    height: 100%;
+}
+.addmian .container .addbox{
+    width: 6rem;
+    height: 8rem;
+    font-size: 0.4rem;
+    word-wrap: break-word;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+}
+#text{
+    width: 5.98rem;
+    height: 7.78rem;
+    font-size: 0.4rem;
+    padding: 0.1rem;
+    background: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+}
+.top .submit{
+    width: 1rem;
+    height: 0.5rem;
+    background: transparent;
+    font-size: 0.4rem;
+    color: #333;
+    float: right;
+}
+.add .close{
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.2rem;
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+}
+.addbox .notice{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+/*未完成开始*/
+/*头部*/
+.main{
+    width: 7.5rem;
+    height: auto;
+    background: #e8e8e8;
+    position: relative;
+    display: none;
+}
+.main .top{
+    width: 100%;
+    height: 1.5rem;
+    background: #e8e8e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 666;
+}
+.main .top .topbox{
+    width: 7.2rem;
+    height: 0.5rem;
+    margin: 0.5rem 0.15rem;
+    z-index: 666;
+}
+.main .top .topbox span{
+    font-size: 0.4rem;
+    margin-left: 0.1rem;
+}
+.main .top .topbox .select{
+    float: left;
+    font-size: 0.6rem;
+    margin-top: -0.1rem;
+    color: #333;
+}
+.main .top .topbox .search{
+    width: 1.6rem;
+    background: transparent;
+    float: right;
+    font-size: 0.4rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+}
+.main .container{
+    width: 7.5rem;
+    height: auto;
+    position: absolute;
+    left: 0;top: 0.8rem;
+    background: #e8e8e8;
+}
+.container .item{
+    width: 7.2rem;
+    height: auto;
+    margin: 1rem 0.15rem;
+}
+.item ul{
+    width: 7.2rem;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.item ul li{
+    width: 7rem;
+    max-height: 2rem;
+    border-radius: 0.1rem;
+    float: left;
+    background: #fff;
+    padding: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+.item ul li p{
+    width: 7rem;
+    height: 1rem;
+    float: left;
+    line-height: 0.5rem;
+    font-size: 0.35rem;
+    word-wrap: break-word;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item ul li time{
+    font-size: 0.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #666;
+    float: left;
+}
+.item ul li time i{
+    display: block;
+    float: left;
+    font-size: 0.3rem;
+    color: #ffbf90;
+    line-height: 0.5rem;
+    margin-right: 0.1rem;
+}
+.item ul li i.xing{
+    font-size: 0.3rem;
+    color: #333;
+    margin-left: 0.4rem;
+    line-height: 0.5rem;
+    cursor: pointer;
+    float: left;
+}
+.item ul li i.active{
+    color: red;
+}
+.item ul li input{
+    width: 0.35rem;
+    height: 0.35rem;
+    margin: 0.2rem;
+    float:right;
+}
+
+.item .moveTo{
+    width: 1rem;
+    height: 1rem;
+    background: #b0acab;
+    border-radius: 50%;
+    font-size: 0.4rem;
+    color: #fff;
+    position: fixed;
+    bottom: 0.7rem;
+    left: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.item .addList{
+    width: 1rem;
+    height: 1rem;
+    background: limegreen;
+    border-radius: 50%;
+    line-height: 1rem;
+    font-size: 0.6rem;
+    color: #fff;
+    position: fixed;
+    bottom: 0.7rem;
+    right: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.wait .move{
+    width: 2rem;
+    border-radius: 0.5rem;
+    font-size: 0.35rem;
+}
+
+.bar{
+    /*display: block!important;*/
+}
+.ADDBox{
+    /*display: block!important;*/
+}
+.overtext{
+    /*display: block!important;*/
+}
+.wait{
+    display: block;
+}
+.done{
+    /*display: block!important;*/
+}

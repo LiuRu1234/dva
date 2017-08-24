@@ -1,0 +1,21 @@
+/*内容开始*/
+.title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+pre{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    white-space: pre-wrap;
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 22.96px;
+    color: #464646;
+    background-color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+
+

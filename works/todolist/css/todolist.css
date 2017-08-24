@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype'),
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+    margin: 0;padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+input{
+    border: 0;
+    outline: none;
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+section.leftbar{
+    width: 200px;
+    height: 100%;
+    background: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.leftbar h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding:20px 5px;
+}
+.leftbar ul li{
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.leftbar ul li:first-child:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    margin: 5px 10px;
+    float: left;
+    cursor: pointer;
+}
+.leftbar ul li:last-child:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #faff02;
+    margin: 5px 10px;
+    float: left;
+    cursor: pointer;
+}
+.main{
+    width: auto;
+    height: 100%;
+    margin-left: 200px;
+    background: #ccc;
+    position: relative;
+}
+.main .container{
+    width: 800px;
+    height: 550px;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+    border: 1px solid #ff4c4a;
+    border-radius: 15px;
+    background: #f0ff91;
+    box-shadow: 2px 2px 2px 2px #333;
+}
+
+/*添加事件开始*/
+.container .add{
+    width: 800px;
+    height: 550px;
+    /*display: none;*/
+}
+.container .add h3{
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+}
+
+.container .addbox{
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+    /*border: 1px solid #ff4c4a;*/
+    background: #f0ff91;
+    box-shadow: 0px 0px 1px 3px #74b9d9;
+}
+#text{
+    width: 428px;
+    height: 278px;
+    padding: 10px;
+    background: #f0ff91;
+    resize: none;
+}
+.container #submit{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 20px;
+    background: #45ff4d;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.add .close{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+}
+.addbox .notice{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+/*未完成开始*/
+.container .item{
+    width: 100%;
+    height: 350px;
+    background: #fcff6a;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: none;
+}
+.item h3{
+    position: absolute;
+    width: 760px;
+    text-align: center;
+    top: -60px;
+    left: 50%;
+    margin-left: -380px;
+}
+.item .ding{
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    color: red;
+    /*color: #ccc;*/
+    position: absolute;
+    left: 20px;
+    top: -80px;
+}
+.item ul{
+    width: 100%;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.item ul li{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #ccc;
+    float: left;
+}
+.item ul li input{
+    margin: 20px 20px;
+    float: left;
+}
+.item ul li p{
+    width: 500px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.item ul li time{
+    height: 50px;
+    line-height: 50px;
+    margin: 5px;
+    color: #666;
+}
+.item ul li time i{
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: #ffbf90;
+    line-height: 50px;
+}
+.item ul li i.xing{
+    font-size: 20px;
+    color: #333;
+    line-height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.item ul li i.active{
+    color: red;
+}
+
+.item .moveTo{
+    width: 120px;
+    height: 50px;
+    background: limegreen;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom: -70px;
+    left: 200px;
+    cursor: pointer;
+}
+.item .addList{
+    width: 80px;
+    height: 50px;
+    background: limegreen;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom: -70px;
+    right: 200px;
+    cursor: pointer;
+}
+
+/*添加成功提示框*/
+.addAlert{
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #666;
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    display: none;
+}
+.addAlert p{
+    width: 100%;
+    height: 20px;
+    margin: 20px 0 0 50px;
+}
+.addAlert input{
+    width: 50px;
+    height: 30px;
+    background: #ccc;
+    margin: 50px 0 0 180px;
+}
+/*遮罩*/
+.tooltipMask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0);
+    display: none;
+}
+.overText{
+    width: 268px;
+    height: 195px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 650px;
+    top: 220px;
+    box-shadow: 2px 2px 2px 2px #666;
+    background: url("../img/timg.jpg") no-repeat;
+    background-position: -95px -78px;
+    background-size: 470px 350px;
+    font-size: 16px;
+    color: #000;
+    word-wrap: break-word;
+    padding: 50px 5px 0;
+}

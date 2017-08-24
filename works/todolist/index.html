@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/todolist.css">
+</head>
+<body>
+<!--
+    1. 添加事件
+    2. 查看事件
+    3. 操作事件状态
+    4. 标记关键状态
+    5. 查看已完成
+    6. 删除已完成
+-->
+<section class="leftbar">
+    <h3>ToDoList</h3>
+    <ul>
+        <li id="toWait">查看待办事件</li>
+        <li id="toDone">查看已完成</li>
+    </ul>
+</section>
+<div class="main">
+    <div class="container">
+        <div class="add">
+            <h3>添加新事件</h3>
+            <label for="" class="addbox">
+                <textarea id="text" autofocus></textarea>
+                <div class="notice">
+                    <span id="notice">0</span>
+                    <span>/</span>
+                    <span>40</span>
+                </div>
+            </label>
+            <input type="button" value="提交" id="submit">
+            <i class="iconfont close">&#xe689;</i>
+            <div class="addAlert addPrompt">
+                <p>请输入内容再提交</p>
+                <input type="button" id="addPrompt" value="确定">
+            </div>
+            <div class="addAlert addSure">
+                <p>添加成功</p>
+                <input type="button" id="addAlert" value="确定">
+            </div>
+        </div>
+
+        <div class="wait item">
+            <i class="iconfont ding">&#xe622;</i>
+            <h3>
+                未完成的事项
+            </h3>
+            <ul></ul>
+            <input type="button" value="移动到已完成" class="moveTo movebtn">
+            <input type="button" value="添加" class="addList">
+        </div>
+        <div class="done item">
+            <i class="iconfont ding">&#xe622;</i>
+            <h3>已完成的事项</h3>
+            <ul></ul>
+            <input type="button" value="清除" class="moveTo clearbtn">
+            <input type="button" value="添加" class="addList">
+        </div>
+    </div>
+</div>
+<div class="tooltipMask">
+    <div class="overText"></div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/todolist.js"></script>
+</html>

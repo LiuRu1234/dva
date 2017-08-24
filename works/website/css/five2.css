@@ -1,0 +1,174 @@
+.one{
+    width: 1000px;
+    height: 940px;
+}
+.one-left{
+    width: 496px;
+    float: left;
+}
+.one .one-left>img{
+    width: 496px;
+    height: 584px;
+    margin-bottom: 8px;
+}
+.one .one-left p{
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+    height: 60px;
+    background: url(../img/five/ico_up.png) no-repeat 176px 37px;
+}
+.one .one-right{
+    width: 490px;
+    float: left;
+    margin-left: 10px;
+}
+.one .one-right>img{
+    width: 496px;
+    height: 582px;
+    margin-bottom: 0;
+}
+.one .one-right p{
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+    height: 60px;
+    background: url(../img/five/ico_down.png) no-repeat bottom 12px left;
+}
+.two{
+    width: 1000px;
+    height: 1020px;
+}
+.two .two-left{
+    width: 1000px;
+    height: 365px;
+}
+.two .two-left>img{
+    width: 778px;
+    height: 365px;
+    float: left;
+    margin-right: 9px;
+}
+.two .two-left .toleft{
+    float: left;
+    width: 15px;
+    height: 21px;
+    margin-top: 221px;
+    margin-right: 10px;
+    background: url(../img/five/ico_left.png) no-repeat;
+}
+.two .two-left p{
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+    float: left;
+    width: 163px;
+    margin-top: 215px;
+}
+.two .two-right{
+    width: 1000px;
+    height: 362px;
+}
+.two .two-right>img{
+    width: 516px;
+    height: 362px;
+    margin-bottom: 0;
+}
+.two .two-right p{
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+    height: 60px;
+    width: 480px;
+    margin-top: 182px;
+    float: left;
+    background: url(../img/five/ico_right.png) no-repeat right top 5px;
+}
+.three p{
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+}
+.four-right p{
+    margin-top: 300px!important;
+    margin-right: 10px!important;
+    width: 300px!important;
+}
+.four-right>img{
+    width: 686px!important;
+    height: 379px;
+}
+.five{
+    width: 1000px;
+    height: 940px;
+}
+.five .five-left{
+    width: 1000px;
+}
+.five .five-left>img{
+    width: 1000px;
+    height: 450px;
+    margin-bottom: 8px;
+}
+.five .toup{
+    float: left;
+    margin-left: 18px;
+    margin-top: 10px;
+    background: url(../img/five/ico_up.png) no-repeat;
+    width: 21px;
+    height: 15px;
+}
+.five p.a{
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+    height: 60px;
+    margin-left: 650px;
+}
+.five .five-right{
+    width: 1000px;
+    float: left;
+}
+.five .five-right>img{
+    width: 605px;
+    height: 420px;
+    margin-bottom: 0;
+    float: left;
+}
+.five .five-right .toright{
+    float: left;
+    margin-top: 160px;
+    margin-left: 26px;
+    width: 15px;
+    height: 21px;
+    background: url(../img/five/ico_left.png) no-repeat;
+}
+.five .five-right p.b{
+    width: 340px;
+    float: left;
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+    height: 60px;
+    margin-top: 155px;
+    margin-left: 10px;
+}
+.tongdao>img{
+    width: 435px;
+    height: 148px;
+    margin: 150px auto 100px;
+}
+
+
+.fuli{
+    display: none;
+}
+.fuli>p{
+    width: 1000px;
+    height: 100px;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #9fa09f;
+    line-height: 30px;
+}
+

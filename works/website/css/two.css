@@ -1,0 +1,64 @@
+/*内容开始*/
+.main{
+    width: 100%;
+    height: auto;
+}
+.mainbox{
+    width: 1000px;
+    height: auto;
+    margin: 10px auto;
+}
+.main-top{
+    width: 1000px;
+    height: 750px;
+    margin-top: 30px;
+}
+.mainbox p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.mainbox p img{
+    float: left;
+    margin-right: 5px;
+}
+.main-top .main-left{
+    width: 437px;
+    height: auto;
+    float: left;
+}
+.main-top .main-right{
+    width: 448px;
+    height: 750px;
+    float: left;
+}
+.main-top .main-right pre{
+    color: #999;
+    font-size: 14px;
+    line-height: 16px;
+}
+.news{
+    width: 1000px;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin: 40px 0;
+}
+.news li{
+    width: 900px;
+    margin: 20px 50px;
+    border-bottom: 1px dashed #ccc;
+}
+.news li a:before{
+    content: "";
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 8px;
+    background: #333;
+}
+.news li span{
+    float: right;
+}
+
+
+
